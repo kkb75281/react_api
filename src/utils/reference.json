@@ -3,128 +3,762 @@
   "cssRefer": [
     {
       "num": 1,
-      "title": "accent-color",
-      "desc": "accent-color 속성은 요소의 강조 색상을 지정합니다.",
-      "descBasic": "align-content : stretch",
-      "descApple": "모든 속성",
+      "name": "accent-color",
+      "desc": "한 줄의 코드로 브랜드 색상을 기본 제공 HTML 양식 입력으로 가져옵니다.",
+      "values": ["auto", "<color>"],
+      "initial": "auto",
+      "syntax": "accent-color: hsl(228, 4%, 24%)",
+      "descApple": "all elements",
       "descVer": "CSS3",
-      "descStar": "★★★☆☆",
+      "descStar": "★☆☆☆☆",
       "definition": [
-        "align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
-        "align-content 속성은 한 줄(flex-wrap: nowrap)에서는 의미가 없습니다."
+        "한 줄의 코드로 브랜드 색상을 기본 제공 HTML 양식 입력으로 가져옵니다."
       ]
     },
     {
       "num": 2,
-      "title": "align-items",
-      "desc": "align-items 속성은 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.",
-      "descBasic": "align-items  : stretch",
-      "descApple": "모든 속성",
+      "name": "align-content",
+      "desc": "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+      "values": [
+        "start",
+        "end",
+        "flex-start",
+        "flex-end",
+        "center",
+        "normal",
+        "baseline, first baseline, last baseline",
+        "space-between",
+        "space-around",
+        "space-evenly",
+        "stretch",
+        "safe",
+        "unsafe"
+      ],
+      "initial": "normal",
+      "syntax": "align-content: first baseline",
+      "descApple": "multi-line flex containers",
       "descVer": "CSS3",
       "descStar": "★★★☆☆",
       "definition": [
-        "align-items 속성은 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.",
-        "align-content 속성은 한 줄(flex-wrap: nowrap)에서는 의미가 없습니다."
+        "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+        "단일 라인 플렉스 컨테이너에는 영향을 주지 않습니다."
       ]
     },
     {
       "num": 3,
-      "title": "align-self",
-      "desc": "align-self 속성은 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.",
-      "descBasic": "align-self : auto",
-      "descApple": "모든 속성",
+      "name": "align-items",
+      "desc": "아이템의 내부 상하관계 정렬 상태를 설정합니다.",
+      "values": [
+        "normal",
+        "flex-start",
+        "flex-end",
+        "center",
+        "start",
+        "end",
+        "self-start",
+        "self-end",
+        "baseline, first baseline, last baseline",
+        "stretch",
+        "safe",
+        "unsafe"
+      ],
+      "initial": "normal",
+      "syntax": "align-items: first baseline",
+      "descApple": "all elements",
       "descVer": "CSS3",
-      "descStar": "★★★☆☆",
+      "descStar": "★★★★★",
       "definition": [
-        "align-self 속성은 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.",
-        "align-content 속성은 한 줄(flex-wrap: nowrap)에서는 의미가 없습니다."
+        "아이템의 내부 상하관계 정렬 상태를 설정합니다.",
+        "그리드 레이아웃에서는 그리드 영역 내에서 블록 축의 항목 정렬을 제어합니다."
       ]
     },
     {
       "num": 4,
-      "title": "all",
-      "desc": "all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.",
-      "descBasic": "all : auto",
-      "descApple": "모든 속성",
+      "name": "align-self",
+      "desc": "개별적인 콘텐츠 아이템의 정렬 상태를 설정합니다.",
+      "values": [
+        "auto",
+        "normal",
+        "self-start",
+        "self-end",
+        "flex-start",
+        "flex-end",
+        "center",
+        "baseline, first baseline, last baseline",
+        "stretch",
+        "safe",
+        "unsafe"
+      ],
+      "initial": "auto",
+      "syntax": "align-self: safe center",
+      "descApple": "flex items, grid items, and absolutely-positioned boxes",
       "descVer": "CSS3",
-      "descStar": "★★★☆☆",
+      "descStar": "★☆☆☆☆",
       "definition": [
-        "all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.",
-        "all 속성은 모든 속성에서 사용가능합니다."
+        "개별적인 콘텐츠 아이템의 정렬 상태를 설정합니다.",
+        "그리드에서는 그리드 영역 내부에 항목을 정렬합니다.",
+        "Flexbox에서는 항목을 교차축에 정렬합니다"
       ]
     },
     {
       "num": 5,
-      "title": "animation",
-      "desc": "animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다.",
-      "descBasic": "animation : auto",
-      "descApple": "animation",
+      "name": "all",
+      "desc": "CSS 사용자 지정 속성을 제외한 모든 속성을 초기화합니다.",
+      "values": ["initial", "inherit", "unset", "revert"],
+      "initial": "There is no practical initial value for it.",
+      "syntax": "all: initial | inherit | unset | revert",
+      "descApple": "all elements",
       "descVer": "CSS3",
-      "descStar": "★★★☆☆",
+      "descStar": "★★☆☆☆",
       "definition": [
-        "animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다."
+        "CSS 사용자 지정 속성을 제외한 모든 속성을 초기화합니다.",
+        "초깃값, 상속값, 아니면 다른 스타일시트 출처의 값으로 설정할 수 있습니다."
       ]
     },
     {
       "num": 6,
-      "title": "animation-delay",
-      "desc": "animation-delay 속성은 애니메이션 지연 시간을 설정합니다.",
-      "descBasic": "animation-delay : auto",
-      "descApple": "animation",
+      "name": "animation",
+      "desc": "애니메이션과 관련된 속성을 일괄적으로 설정합니다.",
+      "values": [
+        "<single-easing-function>",
+        "<single-animation-iteration-count>",
+        "<single-animation-direction>",
+        "<single-animation-fill-mode>",
+        "<single-animation-play-state>"
+      ],
+      "initial": "as each of the properties of the shorthand",
+      "syntax": "animation: <single-animation>",
+      "descApple": "all elements",
       "descVer": "CSS3",
-      "descStar": "★★★☆☆",
-      "definition": [
-        "animation-delay 속성은 애니메이션 지연 시간을 설정합니다."
-      ]
+      "descStar": "★★★★★",
+      "definition": ["애니메이션과 관련된 속성을 일괄적으로 설정합니다."]
     },
     {
       "num": 7,
-      "title": "animation-direction",
-      "desc": "animation-direction 속성은 애니메이션 움직임 방향을 설정합니다.",
-      "descBasic": "animation-direction : auto",
-      "descApple": "animation",
+      "name": "animation-delay",
+      "desc": "애니메이션 지연 시간을 설정합니다.",
+      "values": ["<time>"],
+      "initial": "0s",
+      "syntax": "animation-delay: 2.1s, 480ms",
+      "descApple": "all elements",
       "descVer": "CSS3",
-      "descStar": "★★★☆☆",
-      "definition": [
-        "animation-direction 속성은 애니메이션 움직임 방향을 설정합니다."
-      ]
+      "descStar": "★★★★★",
+      "definition": ["애니메이션 지연 시간을 설정합니다."]
     },
     {
       "num": 8,
-      "title": "animation-duration",
-      "desc": "animation-duration 속성은 애니메이션 움직임 시간을 설정합니다.",
-      "descBasic": "animation-duration : 0s;",
-      "descApple": "animation",
+      "name": "animation-direction",
+      "desc": "애니메이션 움직임 방향을 설정합니다.",
+      "values": ["normal", "reverse", "alternate", "alternate-reverse"],
+      "initial": "normal",
+      "syntax": "animation-direction: alternate, reverse, normal",
+      "descApple": "all elements",
       "descVer": "CSS3",
       "descStar": "★★★☆☆",
-      "definition": [
-        "animation-duration 속성은 애니메이션 움직임 시간을 설정합니다."
-      ]
+      "definition": ["애니메이션 움직임 방향을 설정합니다."]
     },
     {
       "num": 9,
-      "title": "animation-name",
-      "desc": "animation-name 속성은 애니메이션 keyframe 이름을 설정합니다.",
-      "descBasic": "animation-name : none;",
-      "descApple": "animation",
+      "name": "animation-duration",
+      "desc": "애니메이션 움직임 시간을 설정합니다.",
+      "values": ["<time>"],
+      "initial": "0s",
+      "syntax": "animation-duration: 10s, 35s, 230ms",
+      "descApple": "all elements",
       "descVer": "CSS3",
-      "descStar": "★★★☆☆",
-      "definition": [
-        "animation-name 속성은 애니메이션 keyframe 이름을 설정합니다."
-      ]
+      "descStar": "★★★★★",
+      "definition": ["애니메이션 움직임 시간을 설정합니다."]
     },
     {
       "num": 10,
-      "title": "background",
-      "desc": "background 속성은 백그라운드 속성을 일괄적으로 설정합니다.",
-      "descBasic": "background : none;",
-      "descApple": "background",
+      "name": "animation-fill-mode",
+      "desc": "애니메이션이 끝난 후의 상태를 설정합니다.",
+      "values": ["none", "forwards", "backwards", "both"],
+      "initial": "none",
+      "syntax": "animation-fill-mode: both, forwards, none",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["애니메이션이 끝난 후의 상태를 설정합니다."]
+    },
+    {
+      "num": 11,
+      "name": "animation-iteration-count",
+      "desc": "애니메이션의 반복 횟수를 설정합니다.",
+      "values": ["infinite", "<number>"],
+      "initial": "1",
+      "syntax": "animation-iteration-count: 2, 0, infinite",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["애니메이션의 반복 횟수를 설정합니다."]
+    },
+    {
+      "num": 12,
+      "name": "animation-name",
+      "desc": "애니메이션 keyframe 이름을 설정합니다.",
+      "values": ["none", "<custom-ident>"],
+      "initial": "none",
+      "syntax": "animation-name: none, -moz-specific, sliding",
+      "descApple": "all elements",
       "descVer": "CSS3",
       "descStar": "★★★☆☆",
       "definition": [
-        "background 속성은 백그라운드 속성을 일괄적으로 설정합니다.",
-        "background 속성은 백그라운드 사이즈, 포지션 등을 추가적으로 설정합니다."
+        "애니메이션 keyframe 이름을 설정합니다.",
+        "지정된 이름이 at-rule과 일치하지 않으면 애니메이션 실행이 되지 않습니다."
       ]
+    },
+    {
+      "num": 13,
+      "name": "animation-play-state",
+      "desc": "애니메이션 진행상태를 설정합니다.",
+      "values": ["running", "paused"],
+      "initial": "running",
+      "syntax": "animation-play-state: paused, running, running",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": ["애니메이션 진행상태를 설정합니다."]
+    },
+    {
+      "num": 14,
+      "name": "animation-timeline",
+      "desc": "애니메이션의 진행 상황을 정의하는 타임라인의 이름을 지정합니다.",
+      "values": ["auto", "none", "<timeline-name>"],
+      "initial": "auto",
+      "syntax": "animation-timeline: none, -moz-specific, sliding",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": [
+        "애니메이션의 진행 상황을 정의하는 타임라인의 이름을 지정합니다."
+      ]
+    },
+    {
+      "num": 15,
+      "name": "animation-timing-function",
+      "desc": "각 주기의 지속 시간 동안 애니메이션이 진행되는 방식을 설정합니다.",
+      "values": [
+        "<easing-function>",
+        "ease",
+        "linear",
+        "ease-in",
+        "ease-out",
+        "ease-in-out",
+        "cubic-bezier(p1, p2, p3, p4)",
+        "steps(n, <jumpterm>)",
+        "step-start",
+        "step-end"
+      ],
+      "initial": "ease",
+      "syntax": "animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1, 0.1)",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": [
+        "각 주기의 지속 시간 동안 애니메이션이 진행되는 방식을 설정합니다."
+      ]
+    },
+    {
+      "num": 16,
+      "name": "appearance",
+      "desc": "운영 체제의 테마를 기반으로 하는 UI 컨트롤의 기본 모양을 제어하는 데 사용합니다.",
+      "values": ["none", "auto", "menulist-button", "textfield"],
+      "initial": "none",
+      "syntax": "appearance: none | auto | menulist-button | textfield",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": [
+        "운영 체제의 테마를 기반으로 하는 UI 컨트롤의 기본 모양을 제어하는 데 사용합니다."
+      ]
+    },
+    {
+      "num": 17,
+      "name": "aspect-ratio",
+      "desc": "종횡비를 의미하며 요소의 크기를 비율대로 조정할 수 있도록 합니다.",
+      "values": ["auto", "<ratio>"],
+      "initial": "auto",
+      "syntax": "aspect-ratio: 1 / 1",
+      "descApple": "all elements except inline boxes and internal ruby or table boxes",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": [
+        "종횡비를 의미하며 요소의 크기를 비율대로 조정할 수 있도록 합니다."
+      ]
+    },
+    {
+      "num": 18,
+      "name": "backdrop-filter",
+      "desc": "요소 뒤 영역에 흐림이나 색상 시프트 등 그래픽 효과를 적용할 수 있는 속성입니다.",
+      "values": ["auto", "<ratio>"],
+      "initial": "auto",
+      "syntax": "backdrop-filter: url(filters.svg#filter) blur(4px) saturate(150%)",
+      "descApple": "all elements except inline boxes and internal ruby or table boxes",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": [
+        "요소 뒤 영역에 흐림이나 색상 시프트 등 그래픽 효과를 적용할 수 있는 속성입니다.",
+        "요소 뒤 의 모든 것에 적용되기 때문에 효과를 보려면 요소나 배경을 최소한 부분적으로 투명하게 만들어야 합니다."
+      ]
+    },
+    {
+      "num": 19,
+      "name": "backface-visibility",
+      "desc": "사용자를 향할 때 요소의 뒷면을 볼 수 있는지 여부를 설정합니다.",
+      "values": ["visible", "hidden"],
+      "initial": "visible",
+      "syntax": "backface-visibility: visible | hidden",
+      "descApple": "transformable elements",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": [
+        "사용자를 향할 때 요소의 뒷면을 볼 수 있는지 여부를 설정합니다."
+      ]
+    },
+    {
+      "num": 20,
+      "name": "background",
+      "desc": "백그라운드 속성을 일괄적으로 설정합니다.",
+      "values": [
+        "<attachment>",
+        "<box>",
+        "<background-color>",
+        "<bg-image>",
+        "<position>",
+        "<repeat-style>",
+        "<bg-size>"
+      ],
+      "initial": "as each of the properties of the shorthand",
+      "syntax": "backface: green | url('test.jpg') repeat-y | border-box red | no-repeat center/80% url('../img/image.png')",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★★★",
+      "definition": ["백그라운드 속성을 일괄적으로 설정합니다."]
+    },
+    {
+      "num": 21,
+      "name": "background-attachment",
+      "desc": "배경 이미지의 고정 여부를 설정합니다.",
+      "values": ["fixed", "local", "scroll"],
+      "initial": "scroll",
+      "syntax": "background-attachment: fixed | local | scroll",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["백그라운드 속성을 일괄적으로 설정합니다."]
+    },
+    {
+      "num": 22,
+      "name": "background-blend-mode",
+      "desc": "배경을 혼합했을 때 그래픽 효과를 설정합니다.",
+      "values": ["<blend-mode>"],
+      "initial": "normal",
+      "syntax": "background-blend-mode: <mix-blend-mode>",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["배경을 혼합했을 때 그래픽 효과를 설정합니다."]
+    },
+    {
+      "num": 23,
+      "name": "background-clip",
+      "desc": "백그라운드 이미지의 위치 기준점을 설정합니다.",
+      "values": ["border-box", "padding-box", "content-box", "text"],
+      "initial": "border-box",
+      "syntax": "background-clip: inherit | initial | revert | revert-layer | unset",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["백그라운드 이미지의 위치 기준점을 설정합니다."]
+    },
+    {
+      "num": 24,
+      "name": "background-color",
+      "desc": "백그라운드 색을 설정합니다.",
+      "values": ["<color>"],
+      "initial": "transparent",
+      "syntax": "background-color: <color>",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★★★",
+      "definition": ["백그라운드 색을 설정합니다."]
+    },
+    {
+      "num": 25,
+      "name": "background-image",
+      "desc": "백그라운드 이미지 속성을 설정합니다.",
+      "values": ["<color>"],
+      "initial": "transparent",
+      "syntax": "background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)), url('catfront.png');",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★★★",
+      "definition": ["백그라운드 이미지 속성을 설정합니다."]
+    },
+    {
+      "num": 26,
+      "name": "background-origin",
+      "desc": "백그라운드 이미지의 위치 기준점을 설정하기 위한 속성입니다.",
+      "values": ["border-box", "padding-box", "content-box"],
+      "initial": "padding-box",
+      "syntax": "background-origin: border-box | padding-box | content-box",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": [
+        "백그라운드 이미지의 위치 기준점을 설정하기 위한 속성입니다."
+      ]
+    },
+    {
+      "num": 27,
+      "name": "background-position",
+      "desc": "백그라운드 이미지의 위치 영역을 설정합니다.",
+      "values": ["<position>"],
+      "initial": "0% 0%",
+      "syntax": "background-position: [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ]",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★★☆",
+      "definition": ["백그라운드 이미지의 위치 영역을 설정합니다."]
+    },
+    {
+      "num": 28,
+      "name": "background-position-x",
+      "desc": "백그라운드 이미지의 x축 위치 영역을 설정합니다.",
+      "values": ["left", "center", "right", "<length>", "<percentage>"],
+      "initial": "0%",
+      "syntax": "background-position-x: [ center | [ [ left | right | x-start | x-end ]? <length-percentage>? ]! ]",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["백그라운드 이미지의 x축 위치 영역을 설정합니다."]
+    },
+    {
+      "num": 29,
+      "name": "background-position-y",
+      "desc": "백그라운드 이미지의 y축 위치 영역을 설정합니다.",
+      "values": ["top", "center", "bottom", "<length>", "<percentage>"],
+      "initial": "0%",
+      "syntax": "background-position-y: [ center | [ [ top | bottom | y-start | y-end ]? <length-percentage>? ]! ]",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["백그라운드 이미지의 y축 위치 영역을 설정합니다."]
+    },
+    {
+      "num": 30,
+      "name": "background-repeat",
+      "desc": "백그라운드 이미지 반복 여부를 설정합니다.",
+      "values": ["<repeat-style>"],
+      "initial": "repeat",
+      "syntax": "background-repeat: [ repeat | space | round | no-repeat ]{1,2}",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★★☆",
+      "definition": ["백그라운드 이미지 반복 여부를 설정합니다."]
+    },
+    {
+      "num": 31,
+      "name": "background-size",
+      "desc": "백그라운드 이미지 사이즈를 설정합니다.",
+      "values": ["contain", "cover", "auto", "<length>", "<percentage>"],
+      "initial": "auto auto",
+      "syntax": "background-size: [ <length-percentage [0,∞]> | auto ]{1,2}",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★★☆",
+      "definition": ["백그라운드 이미지 사이즈를 설정합니다."]
+    },
+    {
+      "num": 32,
+      "name": "block-size",
+      "desc": "쓰기 모드에 따라 요소의 블록의 수평 또는 수직 크기를 정의합니다.",
+      "values": ["contain", "cover", "auto", "<length>", "<percentage>"],
+      "initial": "auto",
+      "syntax": "block-size: fit-content(20em)",
+      "descApple": "same as width and height",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": [
+        "쓰기 모드에 따라 요소의 블록의 수평 또는 수직 크기를 정의합니다."
+      ]
+    },
+    {
+      "num": 33,
+      "name": "border",
+      "desc": "테두리 속성을 일괄적으로 설정합니다.",
+      "values": ["<line-width>", "<line-style>", "<color>"],
+      "initial": "none",
+      "syntax": "border: medium dashed green",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★★★",
+      "definition": ["테두리 속성을 일괄적으로 설정합니다."]
+    },
+    {
+      "num": 34,
+      "name": "border-block",
+      "desc": "각각의 논리 블록 border 속성 값을 설정합니다.",
+      "values": ["<'border-width'>", "<'border-style'>", "<'color'>"],
+      "initial": "width: medium | style: none | color: currentcolor",
+      "syntax": "border-block: <'border-block-start'>",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["각각의 논리 블록 border 속성 값을 설정합니다."]
+    },
+    {
+      "num": 35,
+      "name": "border-block-color",
+      "desc": "보더 블록의 색상을 설정합니다.",
+      "values": ["<'color'>"],
+      "initial": "currentcolor",
+      "syntax": "border-block-color: #f5f6f7",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 색상을 설정합니다."]
+    },
+    {
+      "num": 36,
+      "name": "border-block-end",
+      "desc": "보더 블록의 끝을 일괄 설정합니다.",
+      "values": ["<'border-width'>", "<'border-style'>", "<'color'>"],
+      "initial": "width: medium | style: none | color: currentcolor",
+      "syntax": "border-block-end: medium dashed blue",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 끝을 일괄 설정합니다."]
+    },
+    {
+      "num": 37,
+      "name": "border-block-end-color",
+      "desc": "보더 블록의 끝 색상을 설정합니다.",
+      "values": ["<'color'>"],
+      "initial": "currentcolor",
+      "syntax": "border-block-end-color: yellow",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 끝 색상을 설정합니다."]
+    },
+    {
+      "num": 38,
+      "name": "border-block-end-style",
+      "desc": "보더 블록의 끝 스타일을 설정합니다.",
+      "values": ["<'color'>"],
+      "initial": "none",
+      "syntax": "border-block-end-style: dashed | dotted | groove",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 끝 스타일을 설정합니다."]
+    },
+    {
+      "num": 39,
+      "name": "border-block-end-width",
+      "desc": "보더 블록의 끝 두께를 설정합니다.",
+      "values": ["<'border-top-width'>"],
+      "initial": "medium",
+      "syntax": "border-block-end-width: thick | 5px",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 끝 두께를 설정합니다."]
+    },
+    {
+      "num": 40,
+      "name": "border-block-start",
+      "desc": "보더 블록의 시작을 일괄 설정합니다.",
+      "values": ["<'border-width'>", "<'border-style'>", "<'color'>"],
+      "initial": "medium | none | canvastext",
+      "syntax": "border-block-start: 2px dotted",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 시작을 일괄 설정합니다."]
+    },
+    {
+      "num": 41,
+      "name": "border-block-start-color",
+      "desc": "보더 블록의 시작 색상을 설정합니다.",
+      "values": ["<'color'>"],
+      "initial": "currentcolor",
+      "syntax": "border-block-start-color: #4c5d21",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 시작 색상을 설정합니다."]
+    },
+    {
+      "num": 42,
+      "name": "border-block-start-style",
+      "desc": "보더 블록의 시작 스타일을 설정합니다.",
+      "values": ["<'border-style'>"],
+      "initial": "none",
+      "syntax": "border-block-start-style: groove",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 시작 스타일을 설정합니다."]
+    },
+    {
+      "num": 43,
+      "name": "border-block-start-width",
+      "desc": "보더 블록의 시작 스타일을 설정합니다.",
+      "values": ["<'border-width'>"],
+      "initial": "medium",
+      "syntax": "border-block-start-width: 5px",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 시작 스타일을 설정합니다."]
+    },
+    {
+      "num": 44,
+      "name": "border-block-style",
+      "desc": "보더 블록의 스타일을 설정합니다.",
+      "values": ["<'border-style'>"],
+      "initial": "none",
+      "syntax": "border-block-style: dashed",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 스타일을 설정합니다."]
+    },
+    {
+      "num": 45,
+      "name": "border-block-width",
+      "desc": "보더 블록의 스타일을 설정합니다.",
+      "values": ["<'border-width'>"],
+      "initial": "medium",
+      "syntax": "border-block-width: 5px",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["보더 블록의 스타일을 설정합니다."]
+    },
+    {
+      "num": 46,
+      "name": "border-bottom",
+      "desc": "테두리 하단 속성을 일괄적으로 설정합니다.",
+      "values": ["<br-width>", "<br-style>", "<color>"],
+      "initial": "width: medium, style : none, color : currentcolor",
+      "syntax": "border-bottom: none thick green",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["테두리 하단 속성을 일괄적으로 설정합니다."]
+    },
+    {
+      "num": 47,
+      "name": "border-bottom-color",
+      "desc": "테두리 아래쪽 색 속성을 설정합니다.",
+      "values": ["<color>"],
+      "initial": "medium",
+      "syntax": "border-bottom-color: rgb(255, 0, 0)",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["테두리 아래쪽 색 속성을 설정합니다."]
+    },
+    {
+      "num": 48,
+      "name": "border-bottom-left-radius",
+      "desc": "테두리 하단 좌측 모서리 굴곡 설정합니다.",
+      "values": ["<length-percentage>"],
+      "initial": "0",
+      "syntax": "border-bottom-left-radius: 0.5em 1em",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["테두리 하단 좌측 모서리 굴곡 설정합니다."]
+    },
+    {
+      "num": 49,
+      "name": "border-bottom-right-radius",
+      "desc": "테두리 하단 우측 모서리 굴곡 설정합니다.",
+      "values": ["<length-percentage>"],
+      "initial": "0",
+      "syntax": "border-bottom-right-radius: 20% 10%",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["테두리 하단 우측 모서리 굴곡 설정합니다."]
+    },
+    {
+      "num": 50,
+      "name": "border-bottom-style",
+      "desc": "테두리 아래쪽 스타일 속성을 설정합니다.",
+      "values": ["<length-percentage>"],
+      "initial": "none",
+      "syntax": "border-bottom-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["테두리 아래쪽 스타일 속성을 설정합니다."]
+    },
+    {
+      "num": 51,
+      "name": "border-bottom-width",
+      "desc": "아래쪽 테두리 너비를 설정합니다.",
+      "values": ["<length-percentage>"],
+      "initial": "medium",
+      "syntax": "border-bottom-width: <length [0,∞]> | thin | medium | thick",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★☆☆☆",
+      "definition": ["아래쪽 테두리 너비를 설정합니다."]
+    },
+    {
+      "num": 52,
+      "name": "border-collapse",
+      "desc": "테두리가 분리될지 또는 상쇄될지를 결정합니다.",
+      "values": ["collapse", "separate"],
+      "initial": "separate",
+      "syntax": "border-collapse: separate | collapse",
+      "descApple": "table and inline-table elements",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": ["테두리가 분리될지 또는 상쇄될지를 결정합니다."]
+    },
+    {
+      "num": 53,
+      "name": "border-color",
+      "desc": "모든 면의 테두리 색상을 설정합니다.",
+      "values": ["<color>"],
+      "initial": "currentcolor",
+      "syntax": "border-color: <color>{1,4}",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": ["모든 면의 테두리 색상을 설정합니다."]
+    },
+    {
+      "num": 54,
+      "name": "border-end-end-radius",
+      "desc": "보더 끝의 끝부분을 둥글게 설정합니다.",
+      "values": ["<length-percentage>"],
+      "initial": "0",
+      "syntax": "border-end-end-radius: 10px",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": ["보더 끝의 끝부분을 둥글게 설정합니다."]
+    },
+    {
+      "num": 55,
+      "name": "border-end-start-radius",
+      "desc": "보더 끝의 시작 부분을 둥글게 설정합니다.",
+      "values": ["<length-percentage>"],
+      "initial": "0",
+      "syntax": "border-end-start-radius: 10px",
+      "descApple": "all elements",
+      "descVer": "CSS3",
+      "descStar": "★★★☆☆",
+      "definition": ["보더 끝의 시작 부분을 둥글게 설정합니다."]
     }
   ]
 }

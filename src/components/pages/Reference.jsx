@@ -6,25 +6,20 @@ import Footer from "../layout/Footer";
 import Title from "../layout/Title";
 import ReferCont from "../include/ReferCont";
 import Contact from "../layout/Contact";
-
-// 클래스형 컴퍼넌트 / 함수형 컴퍼넌트 --> 리액트 훅
-
 const Reference = () => {
-  const [references, setReferences] = useState([]);
-
+  const [references, setReference] = useState([]);
   useEffect(() => {
-    fetch("https://webstoryboy.github.io/react2022/src/assets/json/refer.json")
+    fetch("https://kkb75281.github.io/react_api/src/utils/reference.json")
       .then((response) => response.json())
-      // .then(result => console.log(result.data.htmlRefer))
-      .then((result) => setReferences(result.data.htmlRefer))
+      // .then(result => console.log(result.data.cssRefer))
+      .then((result) => setReference(result.cssRefer))
       .catch((error) => console.log("error", error));
   }, []);
-
   return (
     <>
       <Header />
       <Contents>
-        <Title title={["Reference", "book"]} />
+        <Title title={["referece", "referece api"]} />
         <ReferCont references={references} />
         <Contact />
       </Contents>
@@ -32,5 +27,4 @@ const Reference = () => {
     </>
   );
 };
-
 export default Reference;
