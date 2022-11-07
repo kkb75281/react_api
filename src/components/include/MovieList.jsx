@@ -4,13 +4,14 @@ function MoviePopular(props) {
   return (
     <li>
       <a href={`https://www.themoviedb.org/movie/${props.movie.id}`}>
+        <span className="rank">{props.rank + 1}</span>
         <img
           src={`https://image.tmdb.org/t/p/w500/${props.movie.poster_path}`}
           alt={props.movie.title}
         />
         <em>
           <span className="title">{props.movie.title}</span>
-          <span className="star">{props.movie.vote_average}</span>
+          {/* <span className="star">{props.movie.vote_average}</span> */}
         </em>
       </a>
     </li>
@@ -23,11 +24,11 @@ const MovieList = (props) => {
       <div className="container">
         <div className="movie__inner">
           <ul>
-            {props.lists.map((movies, index) => (
-              index < 4 ?
-              <MoviePopular key={index} movie={movies} /> :
-              null
-            ))}
+            {props.lists.map((movies, index) =>
+              index < 4 ? (
+                <MoviePopular key={index} rank={index} movie={movies} />
+              ) : null
+            )}
           </ul>
         </div>
       </div>
