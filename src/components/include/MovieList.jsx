@@ -1,6 +1,6 @@
 import React from "react";
 
-function MovieItem(props) {
+function MoviePopular(props) {
   return (
     <li>
       <a href={`https://www.themoviedb.org/movie/${props.movie.id}`}>
@@ -17,15 +17,16 @@ function MovieItem(props) {
   );
 }
 
-const MovieCont = (props) => {
-  // console.log(movies);
+const MovieList = (props) => {
   return (
     <section className="cont__movie">
       <div className="container">
         <div className="movie__inner">
           <ul>
-            {props.movies.map((movies, index) => (
-              <MovieItem key={index} movie={movies} />
+            {props.lists.map((movies, index) => (
+              index < 4 ?
+              <MoviePopular key={index} movie={movies} /> :
+              null
             ))}
           </ul>
         </div>
@@ -34,4 +35,4 @@ const MovieCont = (props) => {
   );
 };
 
-export default MovieCont;
+export default MovieList;

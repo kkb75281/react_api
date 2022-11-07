@@ -22,7 +22,7 @@ const ReferCont = ({ references }) => {
               <ReferText
                 key={index}
                 num={refer.num}
-                title={refer.title}
+                title={refer.name}
                 desc={refer.desc}
               />
             ))}
