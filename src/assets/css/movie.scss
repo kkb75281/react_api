@@ -4,16 +4,30 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    .mySwiper {
+      // overflow: visible;
+    }
+    .swiper-slide {
+      width: 30%;
+    }
+    .movielank {
+      width: 100%;
+    }
+    .swiper-pagination-bullet {
+      background: #fff;
+    }
+
     li {
       width: 23%;
       position: relative;
 
       &:hover .rank {
         z-index: 1;
+        opacity: 1;
       }
 
       &:hover img {
-        transform: translateY(-5px);
+        scale: 1;
       }
 
       em {
@@ -24,6 +38,7 @@
       }
 
       img {
+        scale: 0.9;
         transition: all 0.3s;
       }
 
@@ -48,13 +63,14 @@
 
       .rank {
         position: absolute;
-        // top: 0;
-        // left: 20px;
+        top: -10px;
+        left: 20px;
         font-family: var(--font-main);
         font-size: 5vw;
-        top: -60px;
-        left: 0px;
-        z-index: -1;
+        // top: -60px;
+        // left: 0px;
+        z-index: 1;
+        opacity: 0.5;
         transition: all 0.3s;
       }
     }

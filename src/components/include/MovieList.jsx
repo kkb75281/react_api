@@ -1,8 +1,13 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
+import { EffectCoverflow, Pagination } from "swiper";
 
 function MoviePopular(props) {
   return (
-    <li>
+    <li className="movielank">
       <a href={`https://www.themoviedb.org/movie/${props.movie.id}`}>
         <span className="rank">{props.rank + 1}</span>
         <img
@@ -24,11 +29,30 @@ const MovieList = (props) => {
       <div className="container">
         <div className="movie__inner">
           <ul>
-            {props.lists.map((movies, index) =>
-              index < 4 ? (
-                <MoviePopular key={index} rank={index} movie={movies} />
-              ) : null
-            )}
+            <Swiper
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              slidesPerView={"auto"}
+              coverflowEffect={{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              }}
+              pagination={true}
+              modules={[EffectCoverflow, Pagination]}
+              className="mySwiper"
+            >
+              {props.lists.map((movies, index) =>
+                index < 10 ? (
+                  <SwiperSlide key={index}>
+                    <MoviePopular key={index} rank={index} movie={movies} />
+                  </SwiperSlide>
+                ) : null
+              )}
+            </Swiper>
           </ul>
         </div>
       </div>
