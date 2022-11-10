@@ -14,8 +14,8 @@ const Movie = () => {
   const [lists, setLists] = useState([]);
 
   // 자바스크립트 데이터 가져오는 방법
-  const search = (query) => {
-    fetch(
+  const search = async (query) => {
+    await fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=540588f0940b5e6bdcf873b4608b86f0&query=${query}&page=1`
     )
       .then((response) => response.json())

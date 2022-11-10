@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-import { EffectCoverflow, Pagination } from "swiper";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 
 function MoviePopular(props) {
   return (
@@ -34,6 +34,11 @@ const MovieList = (props) => {
               grabCursor={true}
               centeredSlides={true}
               slidesPerView={"auto"}
+              initialSlide={"3"}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
               coverflowEffect={{
                 rotate: 50,
                 stretch: 0,
@@ -42,7 +47,7 @@ const MovieList = (props) => {
                 slideShadows: true,
               }}
               pagination={true}
-              modules={[EffectCoverflow, Pagination]}
+              modules={[Autoplay, EffectCoverflow, Pagination]}
               className="mySwiper"
             >
               {props.lists.map((movies, index) =>
