@@ -22,21 +22,21 @@ const YoutubeSlider = ({ random }) => {
     <section className="youtube__popular">
       <div className="container">
         <div className="youtube__inner">
-        <Swiper
-        slidesPerView={"auto"}
-        centeredSlides={true}
-        spaceBetween={30}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        initialSlide={"3"}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Autoplay, Pagination]}
-        className="mySwiper"
-      >
+          <Swiper
+            slidesPerView={"auto"}
+            centeredSlides={true}
+            spaceBetween={30}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            initialSlide={"5"}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Autoplay, Pagination]}
+            className="mySwiper"
+          >
             {random.map((random, index) =>
               index < 10 ? (
                 <SwiperSlide key={index}>

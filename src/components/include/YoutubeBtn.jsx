@@ -2,19 +2,19 @@ import React from "react";
 
 const UnsplashBtn = ({ onSearch }) => {
   const onClick1 = () => {
-    onSearch("html");
+    onSearch("kpop");
   };
   const onClick2 = () => {
-    onSearch("css");
+    onSearch("pop");
   };
   const onClick3 = () => {
-    onSearch("javascript");
+    onSearch("발라드");
   };
   const onClick4 = () => {
-    onSearch("react");
+    onSearch("랩");
   };
   const onClick5 = () => {
-    onSearch("vue");
+    onSearch("댄스");
   };
 
   return (
@@ -26,19 +26,19 @@ const UnsplashBtn = ({ onSearch }) => {
           onKeyPress={onKeyPress}
         /> */}
         <button type="submit" onClick={onClick1}>
-          html
+          kpop
         </button>
         <button type="submit" onClick={onClick2}>
-          css
+          pop
         </button>
         <button type="submit" onClick={onClick3}>
-          javascript
+          발라드
         </button>
         <button type="submit" onClick={onClick4}>
-          react
+          랩
         </button>
         <button type="submit" onClick={onClick5}>
-          vue
+          댄스
         </button>
       </div>
     </div>
