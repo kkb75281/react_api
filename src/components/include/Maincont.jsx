@@ -1,13 +1,16 @@
 import React from "react";
+
 const mainInfo = [
   { text: "we provide" },
   { text: "visual coding" },
   { text: "solutions" },
   { text: "for you API" },
 ];
+
 const MainText = ({ text }) => {
   return <div>{text}</div>;
 };
+
 const MainCont = () => {
   return (
     <section className="cont__main">
@@ -21,4 +24,5 @@ const MainCont = () => {
     </section>
   );
 };
+
 export default MainCont;
